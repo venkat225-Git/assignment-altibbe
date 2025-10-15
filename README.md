@@ -1,5 +1,7 @@
 🌍 Product Transparency Web App (Altibbe)
 
+
+
 An AI-powered full-stack web application that promotes product transparency and ethical awareness by collecting detailed product data and generating intelligent follow-up questions using Google Gemini AI.
 
 Built with React (frontend) and Node.js + Express + MongoDB (backend), this system allows users to add product information, analyze transparency details, and automatically generate sustainability-related questions.
