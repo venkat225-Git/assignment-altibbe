@@ -1,0 +1,101 @@
+/* ---------- Container ---------- */
+.form-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* ---------- Header ---------- */
+.form-container h2 {
+  text-align: center;
+  color: #2a2a2a;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* ---------- Section Blocks ---------- */
+.section {
+  margin-bottom: 25px;
+  background: #f9fafc;
+  padding: 20px 25px;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+}
+
+.section h3 {
+  color: #0078d4;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* ---------- Input Fields ---------- */
+input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+input:focus {
+  border-color: #0078d4;
+  box-shadow: 0 0 5px rgba(0, 120, 212, 0.2);
+}
+
+/* ---------- Button ---------- */
+button {
+  display: block;
+  width: 100%;
+  background: #0078d4;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #005fa3;
+  transform: translateY(-2px);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .form-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .section {
+    padding: 15px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+}

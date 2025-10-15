@@ -1,0 +1,131 @@
+/* ====== Navbar Wrapper ====== */
+.navbar {
+  width: 100vw;
+  height: 70px;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* stays at top */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+  backdrop-filter: blur(6px);
+}
+
+/* ====== Inner Container ====== */
+.navbar-container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ====== Logo ====== */
+.navbar-logo h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: green;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin: 0;
+}
+
+.navbar-logo h2:hover {
+  color: #005fa3;
+}
+
+/* ====== Navigation Links ====== */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* ====== Hover Underline Effect ====== */
+.navbar-links li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: green;
+  transition: width 0.3s ease;
+}
+
+.navbar-links li:hover {
+  color: #0078d4;
+}
+
+.navbar-links li:hover::after {
+  width: 100%;
+}
+
+/* ====== Remove underline + adjust color for links ====== */
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #0078d4;
+}
+
+.navbar-logo h2,
+.navbar-logo a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+/* ====== Responsive for Mobile ====== */
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .navbar-links li {
+    font-size: 15px;
+  }
+}
+
+/* ====== FIX for overlap ====== */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-content,
+.hero {
+  margin-top: 100px !important; /* pushes homepage below navbar */
+}

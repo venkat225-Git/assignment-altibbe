@@ -1,0 +1,86 @@
+/* Page setup */
+body {
+  background-color: #f3f4f6; /* light gray background */
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Signup card */
+.signup-card {
+  background-color: #ffffff;
+  padding: 40px 35px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  width: 360px;
+  text-align: center;
+}
+
+/* Heading */
+.signup-card h3 {
+  color: #1e3a8a;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+/* Input fields */
+.signup-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-card input:focus {
+  border-color: #2563eb; /* blue border on focus */
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.3);
+}
+
+/* Button */
+.signup-card button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.signup-card button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* Placeholder styling */
+.signup-card input::placeholder {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+  .signup-card {
+    width: 85%;
+    padding: 25px 20px;
+  }
+
+  .signup-card h3 {
+    font-size: 20px;
+  }
+
+  .signup-card button {
+    font-size: 15px;
+  }
+}
